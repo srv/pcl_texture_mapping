@@ -1,0 +1,10 @@
+<launch>
+
+  <node pkg="pcl_texture_mapping" type="pcl_texture_mapping_node" name="pcl_texture_mapping_node" output="screen">
+    <param name="cloud_filename" value="$(find stereo_slam)/pointclouds/0.pcd"/>
+    <param name="work_dir" value="$(find stereo_slam)/"/>
+    <param name="focal_length" value="360.0"/>
+    <param name="image_height" value="384.0"/>
+    <param name="image_width" value="512.0"/>
+  </node>
+</launch>
